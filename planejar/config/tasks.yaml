@@ -1,0 +1,115 @@
+definir_problema_task:
+  description: |
+    Identifique e defina claramente o problema ou oportunidade. Sua missão é:
+    
+    1. Analisar a situação apresentada de forma hermenêutica profunda
+    2. Distinguir entre sintomas e o problema real
+    3. Delimitar o escopo e abrangência do problema
+    4. Identificar o impacto atual e potencial do problema
+    5. Formular uma definição clara e precisa do problema
+    
+    Sua definição deve capturar a essência do problema, não apenas suas manifestações superficiais.
+    
+    Problema inicial: {problema}
+    Contexto: {contexto}
+    Objetivo geral: {objetivo}
+  expected_output: "Definição clara e detalhada do problema ou oportunidade, incluindo seu escopo, impacto e relevância."
+
+analisar_contexto_task:
+  description: |
+    Analise o estado atual e o contexto em que o problema ocorre. Sua missão é:
+    
+    1. Mapear o ambiente e as circunstâncias em que o problema se manifesta
+    2. Identificar fatores organizacionais, humanos, tecnológicos e externos relevantes
+    3. Analisar tendências históricas relacionadas ao problema
+    4. Identificar stakeholders afetados e suas perspectivas
+    5. Determinar restrições e oportunidades contextuais
+    
+    Sua análise deve fornecer uma compreensão abrangente do ecossistema em que o problema existe.
+    
+    Contexto: {contexto}
+    Restrições conhecidas: {restricoes}
+  expected_output: "Análise detalhada do contexto atual, incluindo fatores ambientais, organizacionais e técnicos que influenciam o problema."
+
+identificar_causas_task:
+  description: |
+    Identifique as causas fundamentais do problema. Sua missão é:
+    
+    1. Aplicar técnicas como os 5 Porquês e diagrama de Ishikawa
+    2. Distinguir entre causas imediatas, contribuintes e raízes
+    3. Analisar relações de causa e efeito
+    4. Priorizar causas por impacto e controlabilidade
+    5. Validar as causas identificadas com os dados disponíveis
+    
+    Sua análise deve ir além dos sintomas superficiais, identificando os fatores fundamentais
+    que originam o problema.
+    
+    Definição do problema: {definicao_problema}
+    Análise contextual: {analise_contexto}
+  expected_output: "Identificação das causas raízes do problema, utilizando métodos como 5 Porquês, Diagrama de Ishikawa ou análise de Pareto."
+
+estabelecer_metas_task:
+  description: |
+    Estabeleça metas claras, mensuráveis e alcançáveis. Sua missão é:
+    
+    1. Formular metas SMART (Específicas, Mensuráveis, Alcançáveis, Relevantes, Temporais)
+    2. Alinhar as metas com o objetivo geral e a resolução do problema
+    3. Definir indicadores de sucesso para cada meta
+    4. Estabelecer marcos intermediários quando apropriado
+    5. Considerar o equilíbrio entre ambição e viabilidade
+    
+    Suas metas devem proporcionar direção clara e permitir a avaliação objetiva do sucesso.
+    
+    Definição do problema: {definicao_problema}
+    Causas identificadas: {causas_identificadas}
+    Objetivo geral: {objetivo}
+    Prazo disponível: {prazo}
+  expected_output: "Definição de metas SMART (Específicas, Mensuráveis, Atingíveis, Relevantes e Temporais) para resolução do problema."
+
+desenvolver_plano_task:
+  description: |
+    Desenvolva um plano de ação detalhado e viável. Sua missão é:
+    
+    1. Definir atividades específicas para alcançar cada meta
+    2. Sequenciar as atividades de forma lógica, identificando dependências
+    3. Estimar recursos necessários para cada atividade
+    4. Estabelecer cronograma realista, considerando o prazo disponível
+    5. Identificar riscos potenciais e estratégias de mitigação
+    
+    Seu plano deve ser tanto inovador quanto pragmático, considerando as restrições existentes.
+    
+    Metas estabelecidas: {metas_estabelecidas}
+    Causas identificadas: {causas_identificadas}
+    Recursos disponíveis: {recursos}
+    Prazo disponível: {prazo}
+    Restrições conhecidas: {restricoes}
+  expected_output: "Plano de ação detalhado com atividades, responsáveis, prazos, recursos necessários e indicadores de acompanhamento."
+
+integrar_plano_final_task:
+  description: |
+    Integre e sintetize todas as análises e definições anteriores em um plano completo e coerente. Sua missão é:
+    
+    1. Revisar e consolidar todas as informações produzidas nas etapas anteriores
+    2. Garantir consistência e alinhamento entre todos os componentes do plano
+    3. Estruturar o plano em um formato padronizado e facilmente compreensível
+    4. Identificar e resolver quaisquer lacunas ou contradições
+    5. Preparar um documento final que servirá como guia para a fase de implementação
+    
+    Seu trabalho deve resultar em um plano abrangente, coeso e pronto para execução.
+    
+    Definição do problema: {definicao_problema}
+    Análise contextual: {analise_contexto}
+    Causas identificadas: {causas_identificadas}
+    Metas estabelecidas: {metas_estabelecidas}
+    Plano de ação: {plano_acao}
+    
+    IMPORTANTE: Organize o resultado em formato JSON estruturado com os seguintes campos:
+    - objetivos: lista de objetivos/metas a serem alcançados
+    - atividades: lista de objetos com nome, descrição, prazo e prioridade
+    - cronograma: objeto com início, fim e marcos
+    - recursos_necessarios: lista de recursos necessários
+    - responsaveis: mapeamento de atividades para responsáveis
+    - metricas: lista de objetos com nome, descrição, meta e unidade
+    
+    Certifique-se de que o JSON seja válido e siga exatamente esta estrutura para garantir compatibilidade com o sistema.
+  expected_output: "Documento JSON estruturado contendo o plano completo, integrando todas as análises e definições anteriores em um formato padronizado com os campos necessários para o sistema."

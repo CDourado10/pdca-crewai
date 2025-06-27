@@ -1,0 +1,92 @@
+desenvolver_solucoes_task:
+  description: |
+    Desenvolva soluções para os problemas e desvios identificados. Sua missão é:
+    
+    1. Analisar detalhadamente cada problema e desvio identificado na verificação
+    2. Desenvolver soluções específicas e práticas para cada problema
+    3. Considerar múltiplas alternativas e selecionar as mais promissoras
+    4. Avaliar a viabilidade e o impacto potencial de cada solução
+    5. Priorizar as soluções com base em critérios de impacto e viabilidade
+    
+    Suas soluções devem ser criativas mas práticas, considerando o contexto e as restrições existentes.
+    
+    Problemas identificados: {resultado_verificacao}
+    Plano original: {plano_acao}
+    Objetivo: {objetivo}
+    Problema original: {problema}
+  expected_output: "Conjunto de soluções detalhadas para os problemas identificados na fase de verificação, com análise de viabilidade e impacto."
+
+padronizar_melhorias_task:
+  description: |
+    Padronize e institucionalize as melhorias bem-sucedidas. Sua missão é:
+    
+    1. Identificar quais melhorias e práticas devem ser padronizadas
+    2. Desenvolver procedimentos operacionais padrão para essas práticas
+    3. Criar mecanismos para incorporar essas melhorias aos sistemas existentes
+    4. Definir indicadores para monitorar a aderência aos novos padrões
+    5. Planejar como disseminar e treinar as equipes nos novos padrões
+    
+    Seu objetivo é garantir que as melhorias bem-sucedidas se tornem parte permanente
+    da forma de trabalhar da organização.
+    
+    Resultados da verificação: {resultado_verificacao}
+    Resultados da execução: {resultado_execucao}
+    Plano original: {plano_acao}
+  expected_output: "Procedimentos padronizados para institucionalizar as melhorias bem-sucedidas, incluindo documentação e treinamento necessários."
+
+corrigir_desvios_task:
+  description: |
+    Desenvolva ações corretivas para os desvios identificados. Sua missão é:
+    
+    1. Analisar cada desvio identificado na fase de verificação
+    2. Determinar ajustes precisos necessários para corrigir cada desvio
+    3. Desenvolver um plano de ação específico para implementação das correções
+    4. Definir mecanismos de controle para evitar recorrência dos desvios
+    5. Estabelecer prazos e responsabilidades para as ações corretivas
+    
+    Suas correções devem ser precisas e focadas, evitando oscilações desnecessárias
+    no processo.
+    
+    Desvios identificados: {resultado_verificacao}
+    Plano original: {plano_acao}
+    Resultados da execução: {resultado_execucao}
+  expected_output: "Plano de ações corretivas para os desvios identificados, com responsáveis, prazos e métricas de acompanhamento."
+
+documentar_licoes_task:
+  description: |
+    Capture e documente as lições aprendidas durante todo o ciclo PDCA. Sua missão é:
+    
+    1. Identificar aprendizados significativos em cada fase do ciclo PDCA
+    2. Documentar tanto sucessos quanto fracassos e seus fatores contribuintes
+    3. Extrair princípios e insights que possam ser aplicados em outros contextos
+    4. Organizar as lições de forma estruturada e acessível
+    5. Destacar implicações das lições para práticas futuras
+    
+    Sua documentação deve transformar experiências em conhecimento explícito e transferível.
+    
+    Relatório de verificação: {resultado_verificacao}
+    Plano original: {plano_acao}
+    Resultados da execução: {resultado_execucao}
+    Problema original: {problema}
+    Objetivo original: {objetivo}
+  expected_output: "Registro estruturado das lições aprendidas durante todo o ciclo PDCA, incluindo sucessos, falhas e insights para ciclos futuros."
+
+preparar_proximo_ciclo_task:
+  description: |
+    Prepare recomendações e diretrizes para o próximo ciclo PDCA. Sua missão é:
+    
+    1. Sintetizar os principais aprendizados e resultados do ciclo atual
+    2. Identificar oportunidades prioritárias para o próximo ciclo
+    3. Recomendar ajustes metodológicos com base nas experiências do ciclo atual
+    4. Sugerir focos específicos para cada fase do próximo ciclo
+    5. Desenvolver um roteiro preliminar para guiar o início do próximo ciclo
+    
+    Suas recomendações devem criar uma ponte clara entre o ciclo atual e o próximo,
+    garantindo continuidade e evolução do processo de melhoria.
+    
+    Resultados do ciclo: {resultado_verificacao}
+    Plano original: {plano_acao}
+    Resultados da execução: {resultado_execucao}
+    Problema original: {problema}
+    Objetivo original: {objetivo}
+  expected_output: "Recomendações detalhadas para o próximo ciclo PDCA, incluindo novos objetivos, ajustes no processo e recursos necessários."

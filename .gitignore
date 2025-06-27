@@ -1,0 +1,67 @@
+# Arquivos de ambiente e configuração
+.env
+.env.*
+!.env.example
+*.ini
+config.json
+
+# Arquivos de cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Arquivos de resultados e logs
+resultados/
+*.log
+logs/
+*.out
+
+# Arquivos de cache e diretórios de IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+.ipynb_checkpoints
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.backup
+temp/
+tmp/
+
+# Arquivos específicos do CrewAI
+*.crew_cache/
+*.crew_logs/
+
+# Arquivos de ferramentas dinâmicas geradas
+tools/dinamicas/geradas/
+ferramentas_criadas.py
+equipe_criada.yaml
+agentes_criados.yaml
+tarefas_criadas.yaml
+recursos_integrados.json
+
+# Arquivos de documentação gerados
+documentacao/gerada/

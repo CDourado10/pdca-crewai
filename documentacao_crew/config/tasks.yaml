@@ -1,0 +1,204 @@
+projetar_estrutura_documentacao_task:
+  description: > 
+    PROJETO DE ARQUITETURA DE DOCUMENTAÇÃO
+
+    Você está encarregado de projetar a estrutura completa da documentação para atender a seguinte necessidade:
+
+    TIPO DE DOCUMENTAÇÃO REQUERIDA:
+    {tipo_documentacao}
+
+    CONTEXTO DO PROJETO:
+    {contexto_projeto}
+
+    PÚBLICO-ALVO:
+    {publico_alvo}
+
+    FINALIDADE DA DOCUMENTAÇÃO:
+    {finalidade}
+
+    COMPONENTES TÉCNICOS A SEREM DOCUMENTADOS:
+    {componentes_tecnicos}
+
+    NÍVEL DE DETALHAMENTO NECESSÁRIO:
+    {nivel_detalhamento}
+    
+    REQUISITOS ESPECIAIS:
+    {requisitos_especiais}
+
+    SEU PROJETO DEVE ESPECIFICAR:
+
+    1. VISÃO GERAL DA DOCUMENTAÇÃO:
+       - Propósito e objetivos
+       - Abordagem geral
+       - Formatos de entrega
+
+    2. ESTRUTURA E ORGANIZAÇÃO:
+       - Hierarquia de informações
+       - Divisão em seções e capítulos
+       - Sistema de navegação
+
+    3. PADRÕES E TEMPLATES:
+       - Estilo de escrita recomendado
+       - Formatação e elementos visuais
+       - Convenções de nomenclatura
+
+    4. CONTEÚDO ESSENCIAL:
+       - Lista de tópicos que devem ser abordados
+       - Nível de detalhe por tópico
+       - Exemplos e casos de uso necessários
+
+    5. REQUISITOS DE MÍDIA E RECURSOS:
+       - Diagramas e ilustrações necessários
+       - Vídeos ou tutoriais interativos
+       - Código-fonte de exemplo
+
+    6. PROCESSO DE MANUTENÇÃO:
+       - Estratégia de versionamento
+       - Processo de atualização
+       - Responsabilidades
+
+    Forneça uma especificação técnica completa da estrutura de documentação que servirá como base para os redatores técnicos.
+  expected_output: "Documento de arquitetura detalhado da documentação, incluindo estrutura, organização, padrões, conteúdo essencial, recursos necessários e processo de manutenção. O projeto deve ser claro, completo e adequado às necessidades do público-alvo especificado."
+
+criar_conteudo_documentacao_task:
+  description: > 
+    CRIAÇÃO DE CONTEÚDO DE DOCUMENTAÇÃO TÉCNICA
+
+    Desenvolva o conteúdo detalhado da documentação seguindo a estrutura definida pelo arquiteto para:
+
+    TIPO DE DOCUMENTAÇÃO:
+    {tipo_documentacao}
+
+    PÚBLICO-ALVO:
+    {publico_alvo}
+
+    COMPONENTES A DOCUMENTAR:
+    {componentes_tecnicos}
+
+    ESTRUTURA DEFINIDA:
+    {estrutura_documentacao}
+
+    DIRETRIZES GERAIS:
+
+    1. CLAREZA E PRECISÃO:
+       - Utilize linguagem clara e direta
+       - Mantenha precisão técnica
+       - Explique termos complexos quando necessário
+
+    2. EXEMPLOS PRÁTICOS:
+       - Inclua exemplos de código ou uso
+       - Demonstre casos de uso reais
+       - Forneça snippets funcionais
+
+    3. ORGANIZAÇÃO LÓGICA:
+       - Siga a hierarquia definida no projeto
+       - Utilize títulos e subtítulos adequados
+       - Mantenha consistência entre seções
+
+    4. RECURSOS VISUAIS:
+       - Adicione diagramas quando úteis
+       - Utilize tabelas para comparações
+       - Inclua capturas de tela quando apropriado
+
+    5. NAVEGABILIDADE:
+       - Adicione links internos para referências cruzadas
+       - Inclua índice e sumário
+       - Organize conteúdo por complexidade crescente
+
+    Desenvolva o conteúdo completo seguindo o projeto arquitetural fornecido, garantindo que cada componente técnico seja documentado adequadamente.
+  expected_output: "Conteúdo completo da documentação seguindo a estrutura definida, com linguagem clara, exemplos práticos, recursos visuais apropriados e organização lógica. O conteúdo deve ser tecnicamente preciso e adequado ao público-alvo especificado."
+
+validar_documentacao_task:
+  description: > 
+    VALIDAÇÃO DE DOCUMENTAÇÃO TÉCNICA
+
+    Avalie criticamente a documentação desenvolvida para garantir sua qualidade, precisão e utilidade:
+
+    TIPO DE DOCUMENTAÇÃO:
+    {tipo_documentacao}
+
+    PÚBLICO-ALVO A CONSIDERAR:
+    {publico_alvo}
+
+    OBJETIVOS DA DOCUMENTAÇÃO:
+    {finalidade}
+
+    CRITÉRIOS DE VALIDAÇÃO:
+
+    1. PRECISÃO TÉCNICA:
+       - Verifique a exatidão de todas as informações técnicas
+       - Identifique inconsistências ou erros conceituais
+       - Avalie se o código de exemplo está funcional
+
+    2. COMPLETUDE:
+       - Verifique se todos os componentes foram documentados
+       - Identifique lacunas de informação
+       - Avalie se há tópicos necessários não abordados
+
+    3. USABILIDADE:
+       - Avalie a facilidade de navegação
+       - Verifique se a estrutura é intuitiva
+       - Analise se o público-alvo conseguirá encontrar as informações
+
+    4. CLAREZA:
+       - Verifique se a linguagem é apropriada para o público
+       - Identifique explicações confusas ou complexas demais
+       - Avalie se os exemplos ilustram adequadamente os conceitos
+
+    5. CONSISTÊNCIA:
+       - Verifique padronização de terminologia
+       - Avalie consistência de estilo e formatação
+       - Identifique variações nos padrões estabelecidos
+
+    PRODUTO ESPERADO:
+    Forneça uma análise detalhada da documentação, identificando pontos fortes, áreas a melhorar e recomendações específicas de correções ou adições.
+  expected_output: "Relatório de validação detalhado, identificando pontos fortes, áreas que precisam de melhoria e recomendações específicas para aprimorar a documentação. A análise deve ser crítica e construtiva, focando na utilidade para o público-alvo e na precisão técnica."
+
+finalizar_documentacao_task:
+  description: > 
+    FINALIZAÇÃO E ENTREGA DE DOCUMENTAÇÃO TÉCNICA
+
+    Prepare a versão final da documentação, incorporando os feedbacks da validação e organizando o pacote completo para entrega:
+
+    TIPO DE DOCUMENTAÇÃO:
+    {tipo_documentacao}
+
+    COMPONENTES DO PACOTE:
+    {componentes_tecnicos}
+
+    FORMATOS DE ENTREGA REQUERIDOS:
+    {formatos_entrega}
+
+    FEEDBACK DA VALIDAÇÃO:
+    {feedback_validacao}
+
+    ATIVIDADES DE FINALIZAÇÃO:
+
+    1. INCORPORAÇÃO DE FEEDBACK:
+       - Implemente todas as correções necessárias
+       - Adicione conteúdo para preencher lacunas identificadas
+       - Ajuste a estrutura conforme recomendações
+
+    2. REVISÃO FINAL:
+       - Verifique links e referências cruzadas
+       - Realize revisão ortográfica e gramatical
+       - Confira formatação e elementos visuais
+
+    3. PREPARAÇÃO DE FORMATOS:
+       - Gere versões nos formatos requeridos (PDF, HTML, Markdown, etc.)
+       - Verifique a renderização adequada em cada formato
+       - Otimize para diferentes dispositivos quando aplicável
+
+    4. ORGANIZAÇÃO DO PACOTE:
+       - Estruture diretórios e arquivos de forma lógica
+       - Inclua recursos como imagens e arquivos de exemplo
+       - Crie arquivo README com instruções de uso
+
+    5. METADADOS E VERSIONAMENTO:
+       - Adicione informações de versão e data
+       - Inclua dados de contato para suporte
+       - Documente histórico de alterações
+
+    ENTREGÁVEL:
+    Prepare o pacote completo da documentação finalizada, pronto para distribuição aos usuários finais.
+  expected_output: "Pacote completo de documentação finalizada, incorporando todo o feedback da validação, estruturado de forma lógica e disponível nos formatos requeridos. Deve incluir todos os recursos necessários, metadados apropriados e estar pronto para distribuição ao público-alvo."

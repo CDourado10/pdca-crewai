@@ -1,0 +1,122 @@
+preparar_implementacao_task:
+  description: |
+    Prepare a implementação do plano de ação. Sua missão é:
+    
+    1. Analisar detalhadamente o plano de ação a ser implementado
+    2. Identificar pré-requisitos e dependências entre atividades
+    3. Estabelecer a sequência ótima de execução
+    4. Alocar responsabilidades e recursos para cada atividade
+    5. Definir mecanismos de comunicação e coordenação
+    
+    Seu objetivo é garantir que tudo esteja pronto para uma execução eficiente e eficaz.
+    
+    Plano de ação: {plano_acao}
+    Recursos disponíveis: {recursos}
+    Contexto: {contexto}
+    
+    NOTA: O plano de ação contém objetivos, atividades, cronograma, recursos necessários, responsáveis e métricas.
+    Analise cada um desses elementos para preparar a implementação adequadamente.
+  expected_output: "Plano detalhado de preparação para implementação, incluindo sequência de atividades, recursos necessários e responsáveis."
+
+executar_atividades_task:
+  description: |
+    Execute as atividades definidas no plano de ação. Sua missão é:
+    
+    1. Implementar cada atividade conforme especificado no plano
+    2. Adaptar a execução às circunstâncias reais quando necessário
+    3. Resolver problemas práticos que surgirem durante a implementação
+    4. Coordenar com outros responsáveis quando necessário
+    5. Reportar o andamento e conclusão de cada atividade
+    
+    Foque na execução prática e eficiente de cada tarefa, mantendo o alinhamento com os objetivos.
+    
+    Plano de ação: {plano_acao}
+    Contexto: {contexto}
+    
+    NOTA: Priorize a execução das atividades conforme a sequência e prioridade definidas no plano.
+    Cada atividade possui nome, descrição, prazo e prioridade.
+  expected_output: "Relatório de execução das atividades, detalhando o que foi realizado, ajustes necessários e resultados preliminares."
+
+coletar_dados_task:
+  description: |
+    Colete dados relevantes durante todo o processo de execução. Sua missão é:
+    
+    1. Identificar quais dados são relevantes para monitorar o progresso
+    2. Estabelecer métodos e ferramentas para coleta sistemática de dados
+    3. Registrar dados quantitativos e qualitativos durante a implementação
+    4. Organizar os dados coletados de forma estruturada e acessível
+    5. Garantir a integridade e confiabilidade dos dados
+    
+    Lembre-se que estes dados serão fundamentais para a fase de verificação do ciclo PDCA.
+    
+    Plano de ação: {plano_acao}
+    Contexto: {contexto}
+    
+    NOTA: Utilize as métricas definidas no plano de ação como base para a coleta de dados.
+    Cada métrica possui nome, descrição, meta e unidade de medida.
+  expected_output: "Conjunto estruturado de dados coletados durante a execução, organizados por indicador e com análise preliminar."
+
+gerenciar_recursos_task:
+  description: |
+    Gerencie os recursos utilizados durante a implementação. Sua missão é:
+    
+    1. Monitorar a utilização dos recursos alocados para cada atividade
+    2. Otimizar a alocação de recursos conforme as necessidades reais
+    3. Identificar e resolver gargalos relacionados a recursos
+    4. Prever necessidades futuras de recursos com base no andamento
+    5. Documentar o uso efetivo de recursos para análise posterior
+    
+    Seu objetivo é garantir que os recursos sejam utilizados de forma eficiente e eficaz.
+    
+    Recursos disponíveis: {recursos}
+    Plano de ação: {plano_acao}
+    
+    NOTA: Compare os recursos disponíveis com os recursos necessários listados no plano de ação
+    para identificar possíveis lacunas ou otimizações.
+  expected_output: "Relatório de utilização de recursos, identificando eficiências, desperdícios e necessidades de ajustes."
+
+monitorar_progresso_task:
+  description: |
+    Monitore o progresso da implementação e identifique desvios. Sua missão é:
+    
+    1. Acompanhar o andamento de cada atividade em relação ao cronograma
+    2. Comparar resultados parciais com o esperado no plano
+    3. Identificar desvios, atrasos ou problemas na implementação
+    4. Analisar as causas dos desvios identificados
+    5. Alertar sobre ajustes necessários durante a execução
+    
+    Seu papel é garantir que a implementação permaneça alinhada com o plano original,
+    ou que desvios sejam identificados e tratados precocemente.
+    
+    Plano de ação: {plano_acao}
+    Contexto: {contexto}
+    
+    NOTA: Utilize o cronograma e os marcos definidos no plano de ação como referência para
+    monitorar o progresso das atividades.
+  expected_output: "Análise de progresso da implementação, comparando o planejado versus o realizado, com identificação de desvios."
+
+documentar_implementacao_task:
+  description: |
+    Documente todo o processo de implementação. Sua missão é:
+    
+    1. Registrar todas as ações realizadas durante a implementação
+    2. Documentar decisões tomadas e suas justificativas
+    3. Registrar adaptações feitas ao plano original
+    4. Capturar lições aprendidas durante a execução
+    5. Compilar um relatório completo do processo de implementação
+    
+    Seu relatório deve fornecer uma visão clara e abrangente de como o plano foi executado,
+    servindo como base para a fase de verificação e para ciclos futuros.
+    
+    Plano de ação: {plano_acao}
+    Contexto: {contexto}
+    
+    IMPORTANTE: Organize o resultado em formato JSON estruturado com os seguintes campos:
+    - atividades_concluidas: lista de atividades que foram concluídas
+    - dados_coletados: dicionário com os dados coletados durante a execução
+    - obstaculos_encontrados: lista de obstáculos ou problemas encontrados
+    - ajustes_realizados: lista de ajustes feitos ao plano original
+    - documentacao: texto descritivo do processo de implementação
+    
+    Certifique-se de que o JSON seja válido e siga exatamente esta estrutura para garantir compatibilidade com o sistema.
+  expected_output: "Documento JSON estruturado contendo o relatório detalhado da implementação, incluindo todas as etapas, resultados, lições aprendidas e recomendações para futuras melhorias."

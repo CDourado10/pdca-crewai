@@ -1,0 +1,2 @@
+# Pacote para a ferramenta PythonPackageInstaller
+from .python_package_installer_tool import PythonPackageInstallerTool

@@ -1,0 +1,106 @@
+analisar_dados_task:
+  description: |
+    Analise os dados coletados durante a execução do plano. Sua missão é:
+    
+    1. Examinar detalhadamente os dados coletados durante a implementação
+    2. Aplicar técnicas estatísticas apropriadas para análise
+    3. Identificar padrões, tendências e anomalias nos dados
+    4. Extrair insights relevantes para a avaliação dos resultados
+    5. Preparar uma análise estruturada dos dados para as próximas etapas
+    
+    Sua análise deve ser rigorosa e objetiva, fornecendo uma base sólida para a avaliação dos resultados.
+    
+    Dados coletados: {resultado_execucao}
+    Objetivo original: {objetivo}
+  expected_output: "Análise detalhada dos dados coletados durante a fase de execução, incluindo tendências, padrões e insights relevantes."
+
+comparar_resultados_metas_task:
+  description: |
+    Compare os resultados obtidos com as metas estabelecidas. Sua missão é:
+    
+    1. Revisar as metas e objetivos definidos no plano original
+    2. Comparar sistematicamente os resultados obtidos com cada meta
+    3. Quantificar o grau de alcance de cada meta (percentual, diferença absoluta, etc.)
+    4. Identificar quais metas foram atingidas, parcialmente atingidas ou não atingidas
+    5. Avaliar o sucesso global da implementação em relação aos objetivos
+    
+    Sua avaliação deve ser baseada em evidências concretas e critérios objetivos.
+    
+    Plano original: {plano_acao}
+    Resultados obtidos: {resultado_execucao}
+    Métricas de sucesso: {metricas}
+    Objetivo original: {objetivo}
+  expected_output: "Comparação sistemática entre os resultados obtidos e as metas estabelecidas, com análise de variações e grau de atingimento."
+
+identificar_analisar_desvios_task:
+  description: |
+    Identifique e analise os desvios entre o planejado e o realizado. Sua missão é:
+    
+    1. Identificar todos os desvios significativos entre o plano e a execução
+    2. Categorizar os desvios por tipo, magnitude e impacto
+    3. Investigar as possíveis causas de cada desvio identificado
+    4. Analisar os fatores contextuais que contribuíram para os desvios
+    5. Determinar se os desvios foram positivos (superação) ou negativos (falha)
+    
+    Sua análise deve ir além da identificação superficial, buscando compreender
+    profundamente a natureza e as causas dos desvios.
+    
+    Plano original: {plano_acao}
+    Resultados obtidos: {resultado_execucao}
+    Métricas: {metricas}
+  expected_output: "Identificação e análise detalhada dos desvios entre o planejado e o realizado, com investigação das causas de cada desvio."
+
+avaliar_eficacia_acoes_task:
+  description: |
+    Avalie a eficácia das ações implementadas. Sua missão é:
+    
+    1. Analisar a relação entre as ações específicas e os resultados obtidos
+    2. Determinar quais ações foram mais eficazes e quais foram menos eficazes
+    3. Identificar fatores que potencializaram ou limitaram a eficácia das ações
+    4. Avaliar a eficiência das ações em termos de recursos utilizados versus resultados
+    5. Fornecer insights sobre como a eficácia poderia ser melhorada
+    
+    Sua avaliação deve buscar evidências de causalidade entre ações e resultados,
+    distinguindo correlações de relações causais sempre que possível.
+    
+    Plano original: {plano_acao}
+    Resultados obtidos: {resultado_execucao}
+    Objetivo original: {objetivo}
+  expected_output: "Avaliação da eficácia das ações implementadas, identificando o que funcionou, o que não funcionou e por quê."
+
+criar_visualizacoes_task:
+  description: |
+    Crie visualizações claras e impactantes dos resultados. Sua missão é:
+    
+    1. Determinar quais visualizações seriam mais adequadas para os dados disponíveis
+    2. Descrever detalhadamente como cada visualização deve ser construída
+    3. Explicar quais insights cada visualização pretende destacar
+    4. Organizar as visualizações em uma sequência lógica que conte uma história
+    5. Garantir que as visualizações sejam acessíveis e facilmente compreensíveis
+    
+    Suas descrições de visualizações devem ser detalhadas o suficiente para que
+    possam ser implementadas posteriormente.
+    
+    Dados coletados: {resultado_execucao}
+    Métricas: {metricas}
+    Plano original: {plano_acao}
+  expected_output: "Descrições de visualizações dos resultados que facilitam a compreensão dos dados, desvios e eficácia das ações."
+
+sintetizar_verificacao_task:
+  description: |
+    Sintetize todas as análises em um relatório de verificação completo. Sua missão é:
+    
+    1. Integrar os insights de todas as análises anteriores
+    2. Criar uma narrativa coerente que capture a essência da verificação
+    3. Destacar os principais achados, tanto positivos quanto negativos
+    4. Identificar lições aprendidas e oportunidades de melhoria
+    5. Preparar conclusões e recomendações para a fase de ação (Act)
+    
+    Seu relatório deve ser abrangente, equilibrado e orientado para ação,
+    fornecendo uma base sólida para a próxima fase do ciclo PDCA.
+    
+    Plano original: {plano_acao}
+    Resultados obtidos: {resultado_execucao}
+    Objetivo original: {objetivo}
+    Métricas: {metricas}
+  expected_output: "Relatório detalhado da verificação completa, incluindo análise de dados, comparação de resultados, identificação de desvios, avaliação de eficácia e visualizações dos resultados."

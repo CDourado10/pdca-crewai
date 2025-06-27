@@ -1,0 +1,87 @@
+criar_agentes_task:
+  description: |
+    Crie agentes especializados para resolver o problema específico apresentado. Sua missão é:
+    
+    1. Analisar o problema e o contexto para identificar os tipos de especialistas necessários
+    2. Definir o papel, objetivo e história de cada agente de forma clara e detalhada
+    3. Garantir que os agentes tenham as habilidades necessárias para suas funções
+    4. Otimizar a personalidade e comportamento de cada agente para maximizar sua eficácia
+    5. Documentar as configurações dos agentes em formato YAML compatível com o sistema
+    
+    Problema: {problema}
+    Contexto: {contexto}
+    Fase PDCA: {fase_pdca}
+    Requisitos específicos: {requisitos}
+    
+    Observação: Utilize as informações das ferramentas e da estrutura de equipe disponíveis no contexto.
+  expected_output: "Configurações YAML para os agentes especializados, incluindo role, goal e backstory para cada agente."
+
+criar_tarefas_task:
+  description: |
+    Crie tarefas bem estruturadas para os agentes resolverem o problema específico apresentado. Sua missão é:
+    
+    1. Decompor o problema em tarefas menores, bem definidas e sequenciadas
+    2. Definir instruções claras e detalhadas para cada tarefa
+    3. Especificar as entradas necessárias e saídas esperadas para cada tarefa
+    4. Estabelecer dependências e fluxo de informações entre as tarefas
+    5. Documentar as configurações das tarefas em formato YAML compatível com o sistema
+    
+    Problema: {problema}
+    Contexto: {contexto}
+    Fase PDCA: {fase_pdca}
+    Requisitos específicos: {requisitos}
+    
+    Observação: Utilize as informações dos agentes, ferramentas e da estrutura de equipe disponíveis no contexto.
+  expected_output: "Configurações YAML para as tarefas, incluindo description e expected_output para cada tarefa, com definição clara de entradas e saídas."
+
+criar_equipe_task:
+  description: |
+    Crie uma estrutura de equipe otimizada para resolver o problema específico apresentado. Sua missão é:
+    
+    1. Determinar a melhor composição de equipe baseada nos agentes e tarefas disponíveis
+    2. Definir a estrutura de colaboração e comunicação entre os agentes
+    3. Estabelecer o processo de trabalho (sequencial, paralelo ou híbrido)
+    4. Otimizar a atribuição de tarefas aos agentes mais adequados
+    5. Documentar a configuração da equipe em formato compatível com o sistema
+    
+    Problema: {problema}
+    Contexto: {contexto}
+    Fase PDCA: {fase_pdca}
+    Requisitos específicos: {requisitos}
+    
+    Observação: Utilize as informações das ferramentas disponíveis no contexto.
+  expected_output: "Configuração da equipe, incluindo nome, agentes, tarefas, processo de trabalho e estrutura de colaboração."
+
+criar_ferramentas_task:
+  description: |
+    Crie ferramentas especializadas para aumentar a capacidade dos agentes de resolver o problema específico apresentado. Sua missão é:
+    
+    1. Identificar quais ferramentas seriam mais úteis para os agentes no contexto do problema
+    2. Definir a interface (parâmetros de entrada e saída) de cada ferramenta
+    3. Implementar a lógica de cada ferramenta em código Python
+    4. Garantir que as ferramentas sejam eficientes, robustas e fáceis de usar
+    5. Documentar as ferramentas de forma clara e detalhada
+    
+    Problema: {problema}
+    Contexto: {contexto}
+    Fase PDCA: {fase_pdca}
+    Requisitos específicos: {requisitos}
+  expected_output: "Código Python para as ferramentas especializadas, incluindo nome, descrição, parâmetros e implementação."
+
+integrar_recursos_task:
+  description: |
+    Integre todos os recursos criados (agentes, tarefas, equipe e ferramentas) em um sistema coeso e eficiente. Sua missão é:
+    
+    1. Verificar a compatibilidade entre todos os componentes
+    2. Identificar e resolver potenciais problemas de integração
+    3. Otimizar o fluxo de trabalho do sistema como um todo
+    4. Garantir que o sistema atenda aos requisitos do problema
+    5. Documentar o sistema integrado de forma clara e detalhada
+    
+    Problema: {problema}
+    Contexto: {contexto}
+    Fase PDCA: {fase_pdca}
+    Requisitos específicos: {requisitos}
+    
+    Observação: Utilize as informações dos agentes, tarefas, equipe e ferramentas disponíveis no contexto.
+  expected_output: "Configuração completa do sistema integrado, incluindo todos os componentes e suas interações, em formato JSON estruturado."
