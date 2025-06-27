@@ -8,7 +8,7 @@ O Projeto PDCA implementa o ciclo de melhoria contínua Plan-Do-Check-Act (Plane
 
 O projeto está organizado em módulos que representam as diferentes fases do ciclo PDCA, além de componentes de suporte:
 
-```
+```text
 crews/pdca/
 ├── __init__.py                # Inicialização do pacote com importação dinâmica
 ├── pdca_flow.py               # Implementação do fluxo PDCA básico
@@ -116,12 +116,45 @@ Equipe especializada na criação de documentação técnica:
 
 ### Ferramentas Dinâmicas
 
-O projeto implementa um sistema de criação dinâmica de ferramentas que permite:
+O projeto inclui um conjunto poderoso de ferramentas dinâmicas que permitem a criação e adaptação de componentes em tempo de execução, representando um dos aspectos mais inovadores desta implementação:
 
-- Gerar novas ferramentas em tempo de execução
-- Criar agentes especializados com base no contexto
-- Definir tarefas específicas para cada situação
-- Formar equipes otimizadas para resolver problemas específicos
+### 🛠️ Dynamic Tool Creator
+
+Uma ferramenta revolucionária que permite criar novas ferramentas dinamicamente a partir de descrições, parâmetros e código de execução:
+
+- **Geração de código AST**: Constrói ferramentas completas usando Abstract Syntax Trees (AST)
+- **Validação automática**: Inclui validação de parâmetros e tipos
+- **Documentação integrada**: Gera automaticamente descrições detalhadas para agentes
+- **Testabilidade**: Cria blocos de teste para validação imediata das ferramentas geradas
+
+Esta ferramenta é particularmente poderosa por permitir que agentes criem suas próprias ferramentas durante a execução do ciclo PDCA, adaptando-se a novos desafios sem intervenção humana.
+
+### 👤 Dynamic Agent Creator
+
+Permite criar configurações de agentes especializados com diferentes papéis, objetivos e histórias de fundo:
+
+- **Configuração YAML**: Gera arquivos de configuração estruturados para agentes
+- **Personalização de contexto**: Define backstories detalhadas para melhorar o raciocínio do agente
+- **Integração com LLMs**: Configuração flexível de modelos de linguagem por agente
+
+### 📋 Dynamic Task Creator
+
+Facilita a definição de tarefas específicas para cada fase do ciclo PDCA:
+
+- **Descrições detalhadas**: Define claramente o escopo e objetivos de cada tarefa
+- **Saídas esperadas**: Especifica os resultados esperados para validação
+- **Formatação multilinhas**: Suporta diferentes estilos de formatação para melhor legibilidade
+
+### 👥 Dynamic Crew Creator
+
+Uma ferramenta avançada que permite a composição de equipes especializadas conforme necessário:
+
+- **Geração de código completo**: Cria classes de equipes funcionais com todos os métodos necessários
+- **Configuração de fluxo**: Suporta diferentes tipos de processos (sequencial, hierárquico)
+- **Integração de agentes e tarefas**: Conecta automaticamente agentes às suas tarefas
+- **Estrutura de diretórios**: Cria toda a estrutura de arquivos necessária para uma nova equipe
+
+Estas ferramentas dinâmicas representam um avanço significativo na automação e adaptabilidade do ciclo PDCA, permitindo que o sistema evolua e se adapte continuamente a novos desafios e contextos sem necessidade de reprogramação manual.
 
 ## Requisitos e Dependências
 
@@ -136,7 +169,8 @@ O projeto implementa um sistema de criação dinâmica de ferramentas que permit
 1. Clone o repositório
 2. Instale as dependências: `pip install -r requirements.txt`
 3. Configure as variáveis de ambiente no arquivo `.env`:
-   ```
+
+   ```makefile
    OPENAI_API_KEY=sua_chave_api
    AZURE_OPENAI_API_KEY=sua_chave_azure
    AZURE_OPENAI_ENDPOINT=seu_endpoint_azure
